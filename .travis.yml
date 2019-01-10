@@ -7,5 +7,5 @@ script:
   - docker images
   - docker info
   - docker run mcr.microsoft.com/windows/nanoserver:1803 ipconfig
-  - docker run --isolation hyperv mcr.microsoft.com/windows/nanoserver:1709 ipconfig
-  - docker run --isolation hyperv mcr.microsoft.com/windows/nanoserver:sac2016 ipconfig
+  # - docker run --isolation hyperv mcr.microsoft.com/windows/nanoserver:1709 ipconfig
+  # - docker run --isolation hyperv mcr.microsoft.com/windows/nanoserver:sac2016 ipconfig
