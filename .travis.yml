@@ -1,8 +1,9 @@
 os: windows
-language: bash
+language: node_js
 services: docker
 
 script:
-  - ls
-  - uname -a
   - docker version
+  - docker images
+  - npm install -g rebase-docker-image
+  - rebase-docker-image -h
