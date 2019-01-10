@@ -5,7 +5,8 @@ services: docker
 script:
   - docker version
   - docker images
-  - choco install -y nodejs
+  - choco install -y nodejs-lts
+  - refreshenv
   - node --version
   - npm install -g rebase-docker-image
   - rebase-docker-image -h
